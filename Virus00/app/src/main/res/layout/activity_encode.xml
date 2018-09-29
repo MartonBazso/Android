@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:fontFamily="casual"
+        android:text="Welcome to the encoder!"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="5dp" />
+
+    <EditText
+        android:id="@+id/textToBeEncoded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Text"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="106dp" />
+
+    <Button
+        android:id="@+id/encode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENCODE"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="162dp"
+        android:onClick="Encode"/>
+
+    <EditText
+        android:id="@+id/EncodedCode"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Code"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/button5"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:onClick="Copy"
+        android:text="Copy"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        android:visibility="visible" />
+
+</LinearLayout>
